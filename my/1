@@ -1,1 +1,5 @@
 print("this is my py"+__name__)
+
+print(2 ** 3)
+
+print(2 * 3)

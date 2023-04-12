@@ -23,7 +23,7 @@ def bisection(function: Callable[[float], float], a: float, b: float) -> float:
     end: float = b
     if function(a) == 0:  # one of the a or b is a root for the function
         return a
-    elif function(b) == 0:
+    elif function(b) == 0:       
         return b
     elif (
         function(a) * function(b) > 0
@@ -44,12 +44,12 @@ def bisection(function: Callable[[float], float], a: float, b: float) -> float:
 
 
 def f(x: float) -> float:
-    return x**3 - 2 * x - 5
+    return x ** 3 - 2 * x - 5
 
 
 if __name__ == "__main__":
     print(bisection(f, 1, 1000))
 
-    import doctest
+    import doctest                        
 
     doctest.testmod()
